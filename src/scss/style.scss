@@ -1,0 +1,19 @@
+.success{
+  color: rgb(0,255,0);
+  display: flex;
+}
+
+span{
+  font-size: 20px;
+  @media screen and (max-width: 767px) {
+    font-size: 25px;
+  }
+}
+
+div{
+  display: block;
+  @media screen and (max-width: 767px) {
+    font-size: 30px
+  }
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
