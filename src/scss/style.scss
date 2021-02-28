@@ -1,3 +1,21 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+
+  @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
+  }
+}
+
+@import 'fonts';
+
+body{
+  font-family: "20421";
+}
+
+
 .success{
   color: rgb(0,255,0);
   display: flex;
@@ -16,4 +34,8 @@ div{
     font-size: 30px
   }
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+img{
+  background-image: url('../img/logo.png');
 }
